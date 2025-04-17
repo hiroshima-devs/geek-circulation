@@ -1,7 +1,6 @@
 // pages/api/balance/[walletAddress].ts
-import { getContract, createThirdwebClient, defineChain, sendTransaction } from "thirdweb";
+import { getContract, createThirdwebClient, defineChain } from "thirdweb";
 import { totalSupply, balanceOf } from "thirdweb/extensions/erc20";
-import { ethers } from "ethers";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export const client = createThirdwebClient({
